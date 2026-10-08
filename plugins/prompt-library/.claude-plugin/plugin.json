@@ -1,0 +1,10 @@
+{
+  "name": "prompt-library",
+  "version": "0.1.0",
+  "description": "Save past prompts to a searchable library; fuzzy search, then Copy or Apply to the prompt field.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Josselin",
+    "url": "https://github.com/josselinonduty"
+  }
+}

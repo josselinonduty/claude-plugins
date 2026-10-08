@@ -1,0 +1,24 @@
+{
+  "name": "josselinonduty-plugins",
+  "owner": {
+    "name": "Josselin"
+  },
+  "plugins": [
+    {
+      "name": "commit-changes",
+      "source": "./plugins/commit-changes",
+      "description": "Split uncommitted changes into logical sections and commit them with clean messages."
+    },
+    {
+      "name": "secret-guard",
+      "source": "./plugins/secret-guard",
+      "description": "Detect secrets in prompts, move them to .env and redact them from history."
+    },
+    {
+      "name": "prompt-library",
+      "source": "./plugins/prompt-library",
+      "description": "Searchable library of saved prompts; copy or apply to the prompt field."
+    }
+  ],
+  "description": "Claude Code plugins by Josselin"
+}

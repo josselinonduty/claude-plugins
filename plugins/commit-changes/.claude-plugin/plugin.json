@@ -1,0 +1,10 @@
+{
+  "name": "commit-changes",
+  "version": "0.1.0",
+  "description": "Band above the prompt that splits uncommitted changes into logical sections and commits them one by one or automatically, with clean canonical messages.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Josselin",
+    "url": "https://github.com/josselinonduty"
+  }
+}

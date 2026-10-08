@@ -1,0 +1,9 @@
+{
+  "name": "secret-guard",
+  "version": "0.1.0",
+  "description": "Detects secrets in prompts and conversation rows, moves them to the project's .env file and redacts them from the history.",
+  "author": {
+    "name": "Josselin",
+    "url": "https://github.com/josselinonduty"
+  }
+}
