@@ -10,7 +10,7 @@ const INPUT = {
 } as const
 
 test('adds the stored instruction as a session section', async ($, on) => {
-  mock.store(on, { lines: ['Be terse.', 'Answer in French.'] })
+  mock.store(on, { text: 'Be terse.\nAnswer in French.' })
   on('prompt.compose', () => ({ sections: [{ id: 'base', text: 'base', scope: 'shared' }] }))
 
   const result = await $.prompt.compose(INPUT)

@@ -1,5 +1,5 @@
 declare module 'claude-code' {
   interface PluginState {
-    'system-instruction': { lines: string[]; editing: number | null }
+    'system-instruction': { text: string; isEditing: boolean }
   }
 }
