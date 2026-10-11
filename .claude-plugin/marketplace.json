@@ -18,6 +18,11 @@
       "name": "prompt-library",
       "source": "./plugins/prompt-library",
       "description": "Searchable library of saved prompts; copy or apply to the prompt field."
+    },
+    {
+      "name": "system-instruction",
+      "source": "./plugins/system-instruction",
+      "description": "Edit a persistent custom system instruction in a panel; given to the model at every session start, including /clear."
     }
   ],
   "description": "Claude Code plugins by Josselin"

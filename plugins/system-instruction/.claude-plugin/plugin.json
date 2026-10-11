@@ -1,0 +1,10 @@
+{
+  "name": "system-instruction",
+  "version": "0.1.0",
+  "description": "Edit a persistent custom system instruction in a panel; it is given to the model at every session start, including /clear.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Josselin",
+    "url": "https://github.com/josselinonduty"
+  }
+}
