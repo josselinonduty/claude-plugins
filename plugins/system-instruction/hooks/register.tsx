@@ -22,17 +22,17 @@ export const register: Register = on => {
     const saved = await load($)
     await update($, text, () => saved)
     await $.command.register({
-      name: 'system-instruction',
+      name: 'instructions',
       description: 'Edit the custom system instruction given to the model at every session start',
     })
 
     return next(e)
   })
 
-  on('command.run', { command: 'system-instruction' }, async $ => {
+  on('command.run', { command: 'instructions' }, async $ => {
     const saved = await load($)
     await update($, text, () => saved)
-    await $.ui.open({ id: PANE, title: 'System instruction', focus: true })
+    await $.ui.open({ id: PANE, title: 'Instructions', focus: true })
 
     return { text: 'System instruction panel opened.' }
   })
@@ -81,10 +81,8 @@ export const register: Register = on => {
 
     return (
       <Box flexDirection="column">
-        <Text dimColor>
-          Given to the model at every session start, /clear included.
-        </Text>
-        {current ? <Text>{current}</Text> : <Text dimColor>(empty)</Text>}
+        <Text bold>Initial instructions</Text>
+        {current ? <Text>{current}</Text> : <Text dimColor>Nothing set yet.</Text>}
         {editing ? (
           <Box flexDirection="column">
             <Text dimColor>
